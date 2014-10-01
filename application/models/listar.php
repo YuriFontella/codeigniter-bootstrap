@@ -14,14 +14,16 @@ class Listar extends CI_Model {
 
 	public function clientes($id = null)
 	{
+
+    /* Reuso da func para listar todos ou com parametro id */
     
     if($id == null) {
 
-      $query = $this->db->get('clientes');
+      $query = $this->db->get('clientes'); //Todos os clientes da tabela
    
     } else {
 
-      $query = $this->db->get_where('clientes', array('id' => $id));
+      $query = $this->db->get_where('clientes', array('id' => $id)); //Com uma condição
   
     }
  
