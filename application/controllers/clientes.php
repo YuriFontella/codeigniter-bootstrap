@@ -2,8 +2,8 @@
 
 class Clientes extends CI_Controller {
 
-	public function index()
-	{
+  public function index()
+  {
 
     //Variáveis do template
 
@@ -16,10 +16,10 @@ class Clientes extends CI_Controller {
     $data['clientes'] = $this->listar->clientes();
     
     //Carregando a view com o parser e o array $data
+    
+    $this->parser->parse('template', $data);
 
-		$this->parser->parse('template', $data);
-
-	}
+  }
 
   //Function para cadastrar os clientes
 
@@ -100,8 +100,8 @@ class Clientes extends CI_Controller {
     $data['container'] = 'editar';
     
     //Carregando a view com o parser e o array $data
-
-		$this->parser->parse('template', $data);
+ 
+    $this->parser->parse('template', $data);
     
   }
 
