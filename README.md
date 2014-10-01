@@ -7,6 +7,7 @@ Classes utilizadas:
 * Upload
 * Parser
 * Email
+* Session
 
 BD com Active Records
 
