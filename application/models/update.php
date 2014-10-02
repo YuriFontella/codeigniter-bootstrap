@@ -2,8 +2,8 @@
 
 class Update extends CI_Model {
 
-	public function cliente($id, $data)
-	{
+  public function cliente($id, $data)
+  {
  
     $this->db->where('id', $id);
     $this->db->update('clientes', $data);
