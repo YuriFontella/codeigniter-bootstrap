@@ -20,6 +20,7 @@ $basename = preg_replace('@/+$@','',dirname($_SERVER['SCRIPT_NAME'])).'/';
 
 $config['base_url'] = $protocol . $server . $basename;
 
+$config['copyright'] = date('Y') . '- Crud CI by Yuri Fontella';
 /*
 |--------------------------------------------------------------------------
 | Index File

@@ -1,4 +1,4 @@
-        <div class="col-md-12" style="margin-top:15px"><p class="text-muted"><?php echo date('Y') ?> - Crud CI by Yuri Fontella</p></div>
+        <div class="col-md-12" style="margin-top:15px"><p class="text-muted"><?php echo $this->config->item('copyright') ?></p></div>
       </div>
     </div>
 
