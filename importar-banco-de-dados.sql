@@ -1,3 +1,32 @@
+CREATE DATABASE  IF NOT EXISTS `divgloba_produtos` /*!40100 DEFAULT CHARACTER SET latin1 */;
+USE `divgloba_produtos`;
+-- MySQL dump 10.13  Distrib 5.5.38, for debian-linux-gnu (x86_64)
+--
+-- Host: 127.0.0.1    Database: divgloba_produtos
+-- ------------------------------------------------------
+-- Server version	5.5.38-0+wheezy1
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8 */;
+/*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;
+/*!40103 SET TIME_ZONE='+00:00' */;
+/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
+/*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
+
+/*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
+/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
+/*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+/*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
+
+-- Dump completed on 2014-10-02 15:04:21
 CREATE DATABASE  IF NOT EXISTS `empresa` /*!40100 DEFAULT CHARACTER SET latin1 */;
 USE `empresa`;
 -- MySQL dump 10.13  Distrib 5.5.38, for debian-linux-gnu (x86_64)
@@ -42,7 +71,7 @@ CREATE TABLE `clientes` (
 
 LOCK TABLES `clientes` WRITE;
 /*!40000 ALTER TABLE `clientes` DISABLE KEYS */;
-INSERT INTO `clientes` VALUES (1453232599,'Yuri Fontella','yuri@gmail.com','Porto Alegre - RS ','2014-10-01 15:44:44'),(4444342764,'Sheldon Cooper','sheldon@lab.com','University NY','2014-10-01 15:51:38'),(4796512954,'Adolph Hitler','ah@ss.com','Germany','2014-10-01 15:47:59'),(6415938883,'Batman','batman@batmail.com','Gotham City','2014-10-01 15:49:02'),(6572487843,'Fausto Silva','fausto@bobo.com','Rede Globo','2014-10-01 18:43:12'),(8814616823,'Robin Hood','robin@floresta.com','Tirando dos ricos','2014-10-01 18:06:28'),(8929586485,'Michael Jackson','mj@whiteman.com','U S A','2014-10-01 15:50:22');
+INSERT INTO `clientes` VALUES (1453232599,'Yuri Fontella','yuri@gmail.com','Porto Alegre - RS ','2014-08-05 15:44:44'),(4444342764,'Sheldon Cooper','sheldon@lab.com','University NY','2014-08-21 15:51:38'),(4796512954,'Adolph Hitler','ah@ss.com','Germany','2014-06-13 15:47:59'),(6415938883,'Batman','batman@batmail.com','Gotham City','2014-03-01 15:49:02'),(6572487843,'Fausto Silva','fausto@bobo.com','Rede Globo','2014-02-18 18:43:12'),(8814616823,'Robin Hood','robin@floresta.com','Tirando dos ricos','2013-12-15 17:06:28'),(8929586485,'Michael Jackson','mj@whiteman.com','U S A','2013-10-09 15:50:22');
 /*!40000 ALTER TABLE `clientes` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -55,4 +84,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2014-10-01 15:55:04
+-- Dump completed on 2014-10-02 15:04:21
