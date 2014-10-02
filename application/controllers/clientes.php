@@ -19,13 +19,7 @@ class Clientes extends CI_Controller {
     
     $this->parser->parse('template', $data);
 
-<<<<<<< HEAD
-    $this->parser->parse('template', $data);
-
-	}
-=======
   }
->>>>>>> 9d220d178b52bc3b8f117d9a421ffe808f7e93e0
 
   //Function para cadastrar os clientes
 
