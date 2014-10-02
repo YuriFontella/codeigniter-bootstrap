@@ -12,8 +12,8 @@ class Listar extends CI_Model {
    
   }
 
-	public function clientes($id = null)
-	{
+  public function clientes($id = null)
+  {
 
     /* Reuso da func para listar todos ou com parametro id */
     
