@@ -17,7 +17,7 @@ class Clientes extends CI_Controller {
     
     //Carregando a view com o parser e o array $data
 
-		$this->parser->parse('template', $data);
+    $this->parser->parse('template', $data);
 
 	}
 
@@ -25,6 +25,8 @@ class Clientes extends CI_Controller {
 
   public function cadastrar() 
   {
+
+    //Foreach form_validation para todos os campos a mesma regra
 
     foreach($_POST as $key => $value) {
 
@@ -55,26 +57,7 @@ class Clientes extends CI_Controller {
 
   }
 
-  //Function para deletar os clientes
-
-  public function deletar() 
-  {
-
-    $id = $this->uri->segment(3);  //3º segmento da url como parametro
-
-    is_null($id) and redirect(base_url());
-  
-    $data = $this->delete->cliente($id);
-   
-    if($data == true)
-    {
-
-      $this->session->set_flashdata('success', 'O cliente #'. $id .' foi exlcuído com sucesso!');
-      redirect(base_url());
-
-    }    
-
-  }
+  //Function para editar os clientes
 
   public function editar($id = null)
   {
@@ -105,6 +88,8 @@ class Clientes extends CI_Controller {
     
   }
 
+  //Function para alterar os clientes
+
   public function alterar()
   {
 
@@ -120,6 +105,27 @@ class Clientes extends CI_Controller {
 
     }  
    
+
+  }
+
+  //Function para deletar os clientes
+
+  public function deletar() 
+  {
+
+    $id = $this->uri->segment(3);  //3º segmento da url como parametro
+
+    is_null($id) and redirect(base_url());
+  
+    $data = $this->delete->cliente($id);
+   
+    if($data == true)
+    {
+
+      $this->session->set_flashdata('success', 'O cliente #'. $id .' foi exlcuído com sucesso!');
+      redirect(base_url());
+
+    }    
 
   }
 
